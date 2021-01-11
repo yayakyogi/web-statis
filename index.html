@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <title>PROJECT 1</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <button type="button" id="showBtn" href="#" onclick="openNav();">&#9776;</button>
+            <button type="button" id="closeBtn" href="#" onclick="closeNav();">&times;</button>
+            <a href="#home"><b>Kuli</b>Kode</a>
+        </div>
+        <div class="navbar-menu" id="myNav">
+            <a href="#home">Home</a>
+            <a href="#galery">Galery</a>
+            <a href="#article">Article</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-button">
+            <a href="#" class="btn-login" onclick="openModal()">About</a>
+        </div>
+    </div><!--./navbar-->
+    
+    <div class="content" id="home">
+        <h1>Welcome to Official Website KuliKode</h1>
+        <hr><br>
+        <p>
+            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+            The quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog.
+        </p><br>
+        <a href="#galery">Link</a>
+    </div><!--./content-->
+    
+    <div class="galery-photos" id="galery">
+        <h1>Galery</h1>
+        <hr> 
+        <div class="galery">
+            <div class="img-card">
+                <img class="img" src="assets/img/img-1.jpg" alt="img-1">
+                <p class="img-caption">Hellow World</p>
+            </div>
+            <div class="img-card">
+                <img src="assets/img/img-2.jpg" alt="img-2">
+                <p class="img-caption">Hellow World</p>
+            </div>
+            <div class="img-card">
+                <img src="assets/img/img-3.jpg" alt="img-3">
+                <p class="img-caption">Hellow World</p>
+            </div>
+            <div class="img-card">
+                <img src="assets/img/img-5.jpg" alt="img-5">
+                <p class="img-caption">Hellow World</p>
+            </div>
+        </div>
+    </div><!--./galelry photos-->
+
+    <div class="artikel" id="article">
+        <h1>Article</h1>
+        <hr> 
+        <div class="artikel-content">
+            <img src="assets/img/img-5.jpg" alt="img-1">
+            <div class="caption-artikel">
+                <h2>Article Title</h2>
+                <p>
+                    The quick brown fox jumps over the lazy dog. The quick brown fox jumpos over the lazy dog
+                    The quick brown fox jumps over the lazy dog. The quick brown fox jumsp over the lazy dog.
+                </p>
+            </div>
+        </div>
+        <div class="artikel-galeri-1">
+            <div class="img-artikel-galeri-1">
+                <img src="assets/img/img-2.jpg" alt="img-2">
+            </div>
+            <div class="caption-artikel-galeri-1">
+                <h2>Article Title</h2>
+                <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+                <div class="underline"></div>
+            </div>
+         </div>
+         <div class="artikel-galeri-2">
+            <div class="img-artikel-galeri-2">
+                <img src="assets/img/img-3.jpg" alt="img-3">
+            </div>
+            <div class="caption-artikel-galeri-2">
+                <h2>Article Title</h2>
+                <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+                <div class="underline"></div>
+            </div>
+         </div>
+    </div><!--./artikel-->
+
+    <div class="footer" id="contact">
+        <h1>KuliKode</h1>
+        <hr>
+        <p>
+            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+        </p>
+        <div class="card">
+            <div class="telepon">
+                <img src="assets/img/phone.svg">
+                <div class="underline"></div>
+                <p>+6282233863080</p>
+            </div>
+            <div class="email">
+                <img src="assets/img/mailbox.png">
+                <div class="underline"></div>
+                <p>yayaktaka@gmail.com</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; <b>Kuli</b>Kode 2020 - Made by &hearts; ProgrammerLakban</p>
+    </div>
+
+    <!-- Modal About-->
+    <div class="modal" id="modalOpen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeModal" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function openNav(){
+        document.getElementById("myNav").style.height="168px";
+        document.getElementById("showBtn").style.display="none";
+        document.getElementById("closeBtn").style.display="inline";
+    }
+    function closeNav(){
+        document.getElementById('myNav').style.height="0";
+        document.getElementById("showBtn").style.display="inline";
+        document.getElementById("closeBtn").style.display="none";
+    }
+    function openModal(){
+        var open = document.getElementById("modalOpen");
+        open.style.display="block";
+    }
+    function closeModal(){
+        document.getElementById("modalOpen").style.display="none";
+    }
+</script>
+</html>
